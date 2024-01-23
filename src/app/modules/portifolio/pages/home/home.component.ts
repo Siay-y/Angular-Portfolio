@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { ExperiencesComponent } from '../../components/experiences/experiences.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { KnowledgeComponent } from '../../components/knowledge/knowledge.component';
 
@@ -8,7 +9,8 @@ import { KnowledgeComponent } from '../../components/knowledge/knowledge.compone
   standalone: true,
   imports: [
     HeaderComponent,
-    KnowledgeComponent
+    KnowledgeComponent,
+    ExperiencesComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
