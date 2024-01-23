@@ -16,14 +16,14 @@ export class ExperiencesComponent {
         strong: 'none',
         p: 'none',
       },
-      text: '<p>none</p>',
+      text: '<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>',
     },
     {
       summary:{
         strong: 'none',
         p: 'none',
       },
-      text: '<p>none</p>',
+      text: '<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>',
     },
   ]);
 }
