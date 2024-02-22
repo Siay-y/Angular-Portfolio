@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
@@ -14,7 +14,8 @@ import { DialogProjectComponent } from '../dialog/dialog-project/dialog-project.
     MatDialogModule,
   ],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrl: './projects.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectsComponent {
   #dialog = inject(MatDialog);

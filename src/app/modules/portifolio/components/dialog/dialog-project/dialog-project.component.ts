@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, OnInit, inject, signal } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 import { IProjects } from '../../../interface/IProjects.interface';
@@ -8,7 +8,8 @@ import { IProjects } from '../../../interface/IProjects.interface';
   standalone: true,
   imports: [MatDialogModule],
   templateUrl: './dialog-project.component.html',
-  styleUrl: './dialog-project.component.scss'
+  styleUrl: './dialog-project.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DialogProjectComponent implements OnInit{
   constructor(
